@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const NotFound = () => {
   return (
-    <div>
+    <div className='bg-secondary-subtle p-5 text-center fs-5 font-bold'>
       The page doesnot exist. Go to <Link to={'/'}>HOME</Link>
     </div>
   )
