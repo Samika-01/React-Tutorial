@@ -8,6 +8,9 @@ import Services from './Pages/Services'
 import Contact from './Pages/Contact'
 import Counter from './Hooks/Counter'
 import Room from './Hooks/Room'
+import Blogs from './Pages/Blogs'
+import DataFetch from './Hooks/DataFetch'
+import Post from './Hooks/Post'
 
 
 const MyRoutes = () => {
@@ -25,8 +28,11 @@ const MyRoutes = () => {
     <Route path='contact' element={<Contact/>}/>
     <Route path='count' element={<Counter/>}/>
     <Route path='room' element={<Room/>}/>
+    <Route path='blogs' element={<Blogs/>}/>
     </Route>
     <Route path='*' element= {<NotFound/>}/>
+    <Route path='data' element = {<DataFetch/>}/>
+    <Route path = 'post/:id' element= {<Post/>}/>
     </Routes>
     </BrowserRouter>
   )
