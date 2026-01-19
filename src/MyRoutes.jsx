@@ -11,6 +11,7 @@ import Room from './Hooks/Room'
 import Blogs from './Pages/Blogs'
 import DataFetch from './Hooks/DataFetch'
 import Post from './Hooks/Post'
+import Recipe from './Hooks/Recipe'
 
 
 const MyRoutes = () => {
@@ -33,6 +34,8 @@ const MyRoutes = () => {
     <Route path='*' element= {<NotFound/>}/>
     <Route path='data' element = {<DataFetch/>}/>
     <Route path = 'post/:id' element= {<Post/>}/>
+    <Route path = 'recipe/:id' element= {<Recipe/>}/>
+
     </Routes>
     </BrowserRouter>
   )
